@@ -14,8 +14,8 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener('pageshow', this.setPageShow.bind(this), false);
-        window.addEventListener('pagehide', this.setPageHide.bind(this), false);
+        window.addEventListener('pageshow', this.setPageShow.bind(this));
+        window.addEventListener('pagehide', this.setPageHide.bind(this));
     }
 
     render () {
